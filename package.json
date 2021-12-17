@@ -1,0 +1,33 @@
+{
+  "name": "backchocopeaje",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anfsanchezru/backChocoPeaje.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anfsanchezru/backChocoPeaje/issues"
+  },
+  "homepage": "https://github.com/anfsanchezru/backChocoPeaje#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.1.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "nodemon": "^2.0.15"
+  }
+}
