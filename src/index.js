@@ -1,19 +1,25 @@
 const express = require('express');
 const morgan = require('morgan');
 const path = require('path');
+const userRoutes = require('./routes/user');
 
 const app = express();
 
+require('dotenv').config();
+
 //DB connection
 const {mongoose} = require('./database');
+    
+
 
 //Settings
 app.set('port', process.env.PORT || 8000);
 
 //Middlewares
-app.use(cors());
+
 app.use(morgan('dev'));
 app.use(express.json());
+app.use('/api',userRoutes);
 
 //Routes
 

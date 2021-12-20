@@ -1,9 +1,9 @@
+//ingresar la info de la base de datos
 const mongoose = require('mongoose');
- 
-const URI = 'mongodb://localhost/mern-tasks'
 
-mongoose.connect(URI)
-    .then(db => console.log('DB is connected'))
-    .catch(err => console.error(err));
+mongoose
+    .connect(process.env.MONGODB_URI)
+    .then(() => console.log('Conectado a MongoDB Atlas'))
+    .catch((error) => console.error(error));
 
 module.exports= mongoose;
