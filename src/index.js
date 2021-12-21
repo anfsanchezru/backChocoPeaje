@@ -7,6 +7,7 @@ const app = express();
 
 require('dotenv').config();
 
+
 //DB connection
 const {mongoose} = require('./database');
     
